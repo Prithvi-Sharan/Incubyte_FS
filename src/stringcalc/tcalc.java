@@ -1,12 +1,17 @@
 package stringcalc;
 
+import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 import static org.testng.Assert.assertEquals;
 
 @Test
 public class tcalc {
+	private Calculator calc;
+	@BeforeTest
+	public void init() {
+		calc=new Calculator();
+	}
 	public void empty() {
-		Calculator calc=new Calculator();
 		assertEquals(calc.Add(""),0);
 	}
 }
