@@ -5,7 +5,7 @@ public class Calculator {
 	private String sep=",|\n";
 	public int Add(String input) {
 		if(input.contains("//")) {
-			sep=Character.toString(input.charAt(2));
+			sep=getsep(input);
 			input=input.split("\n")[1];
 		}
 		String[] num=input.split(sep);
@@ -31,4 +31,9 @@ public class Calculator {
 		}
 		return sum;
 	}
+	
+	private String getsep(String input) {
+		return Character.toString(input.charAt(2));
+	}
+	
 }

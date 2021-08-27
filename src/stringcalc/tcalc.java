@@ -35,4 +35,5 @@ public class tcalc {
 	public void variablesep() {
 		assertEquals(calc.Add("//;\n1;2"),3);
 	}
+	
 }
