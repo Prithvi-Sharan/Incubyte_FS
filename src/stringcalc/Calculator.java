@@ -38,6 +38,11 @@ public class Calculator {
 	}
 	
 	private String getsep(String input) {
+		if(input.charAt(2)=='[') {
+			int start=input.indexOf('[')+1;
+			int end=input.indexOf(']');
+			return input.substring(start,end);
+		}
 		return Character.toString(input.charAt(2));
 	}
 	

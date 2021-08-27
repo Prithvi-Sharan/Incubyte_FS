@@ -5,10 +5,8 @@
     <classes>
       <class name="stringcalc.tcalc">
         <methods>
-          <include name="empty"/>
           <include name="twonum"/>
-          <include name="anylensep"/>
-          <include name="singleval"/>
+          <include name="anylen"/>
           <include name="ng1000"/>
           <include name="unnum"/>
           <include name="init"/>

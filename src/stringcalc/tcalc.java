@@ -45,7 +45,7 @@ public class tcalc {
 		assertEquals(calc.Add("2,1001"),2);
 	}
 	
-	public void anylensep() throws Exception {
-		assertEquals(calc.Add("//[***]\\n1***2***3"),2);
+	public void varlen() throws Exception {
+		assertEquals(calc.Add("//[---]\n1---2---3"),6);
 	}
 }
