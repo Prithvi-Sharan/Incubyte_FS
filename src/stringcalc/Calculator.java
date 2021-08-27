@@ -4,9 +4,11 @@ public class Calculator {
 
 	private String sep=",|\n";
 	public int Add(String input) {
+		if(input.contains("//")) {
+			sep=Character.toString(input.charAt(2));
+			input=input.split("\n")[1];
+		}
 		String[] num=input.split(sep);
-		
-		
 		if(input.isEmpty()) {
 			return 0;
 		}
