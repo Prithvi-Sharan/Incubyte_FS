@@ -3,7 +3,7 @@ package stringcalc;
 public class Calculator {
 
 	private String sep=",|\n";
-	public int Add(String input) {
+	public int Add(String input) throws Exception {
 		if(input.contains("//")) {
 			sep=getsep(input);
 			input=input.split("\n")[1];
@@ -24,10 +24,16 @@ public class Calculator {
 		return Integer.parseInt(a);
 	}
 	
-	private int sum(String[] num) {
+	private int sum(String[] num) throws Exception {
+		for (String n:num) {
+			if(sti(n)<0) {
+				throw new Exception("Negative input:"+n);
+			}
+		}
+		
 		int sum=0;
 		for (String n:num) {
-			sum+=Integer.parseInt(n);
+			sum+=sti(n);
 		}
 		return sum;
 	}

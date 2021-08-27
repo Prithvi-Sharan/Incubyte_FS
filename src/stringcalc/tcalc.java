@@ -12,32 +12,32 @@ public class tcalc {
 		calc=new Calculator();
 	}
 	
-	public void empty() {
+	public void empty() throws Exception {
 		assertEquals(calc.Add(""),0);
 	}
 	
-	public void singleval() {
+	public void singleval() throws Exception {
 		assertEquals(calc.Add("1"),1);
 	}
 	
-	public void twonum() {
+	public void twonum() throws Exception {
 		assertEquals(calc.Add("1,2"),3);
 	}
 	
-	public void unnum() {
+	public void unnum() throws Exception {
 		assertEquals(calc.Add("1,2,3,4"),10);
 	}
 	
-	public void allowline() {
+	public void allowline() throws Exception {
 		assertEquals(calc.Add("1\n2,3"),6);
 	}
 	
-	public void variablesep() {
+	public void variablesep() throws Exception {
 		assertEquals(calc.Add("//;\n1;2"),3);
 	}
 	
 	@Test(expectedExceptions=Exception.class)
-	public void negativeexception() {
+	public void negativeexception() throws Exception {
 		calc.Add("-1");
 	}
 }
