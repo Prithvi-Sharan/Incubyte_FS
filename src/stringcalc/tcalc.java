@@ -11,7 +11,13 @@ public class tcalc {
 	public void init() {
 		calc=new Calculator();
 	}
+	
 	public void empty() {
 		assertEquals(calc.Add(""),0);
 	}
+	
+	public void singleval() {
+		assertEquals(calc.Add("1"),1);
+	}
+	
 }
