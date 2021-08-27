@@ -5,6 +5,7 @@ public class Calculator {
 	public int Add(String input) {
 		String[] num=input.split(",");
 		
+		
 		if(input.isEmpty()) {
 			return 0;
 		}
@@ -12,7 +13,7 @@ public class Calculator {
 			return sti(input);
 		}
 		else {
-			return sum(num[0],num[1]);
+			return sum(num);
 		}
 	}
 	
@@ -20,7 +21,11 @@ public class Calculator {
 		return Integer.parseInt(a);
 	}
 	
-	private int sum(String a, String b) {
-		return Integer.parseInt(a)+Integer.parseInt(b);
+	private int sum(String[] num) {
+		int sum=0;
+		for (int i=0;i<num.length;i++) {
+			sum+=Integer.parseInt(num[i]);
+		}
+		return sum;
 	}
 }
