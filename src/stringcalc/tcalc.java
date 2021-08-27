@@ -44,4 +44,8 @@ public class tcalc {
 	public void ng1000() throws Exception {
 		assertEquals(calc.Add("2,1001"),2);
 	}
+	
+	public void anylensep() throws Exception {
+		assertEquals(calc.Add("//[***]\\n1***2***3"),2);
+	}
 }
