@@ -31,4 +31,8 @@ public class tcalc {
 	public void allowline() {
 		assertEquals(calc.Add("1\n2,3"),6);
 	}
+	
+	public void variablesep() {
+		assertEquals(calc.Add("//;\\n1;2"),3);
+	}
 }

@@ -5,7 +5,7 @@
     <classes>
       <class name="stringcalc.tcalc">
         <methods>
-          <include name="allowline"/>
+          <include name="variablesep"/>
           <include name="init"/>
         </methods>
       </class> <!-- stringcalc.tcalc -->
