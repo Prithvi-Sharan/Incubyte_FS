@@ -40,4 +40,8 @@ public class tcalc {
 	public void negativeexception() throws Exception {
 		calc.Add("-1");
 	}
+	
+	public void ng1000() throws Exception {
+		assertEquals(calc.Add("1,2,1000"),20);
+	}
 }
