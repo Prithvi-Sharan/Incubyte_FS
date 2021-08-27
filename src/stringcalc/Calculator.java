@@ -39,11 +39,21 @@ public class Calculator {
 	
 	private String getsep(String input) {
 		if(input.charAt(2)=='[') {
-			int start=input.indexOf('[')+1;
-			int end=input.indexOf(']');
-			return input.substring(start,end);
+			String i=input;
+			String a="";
+			while(i.indexOf('[')!=-1) {
+				a+=getsubs(i);
+				i=i.substring(i.indexOf(']'));
+			}
+			return a;
 		}
 		return Character.toString(input.charAt(2));
+	}
+	
+	private String getsubs(String input) {
+		int start=input.indexOf('[')+1;
+		int end=input.indexOf(']');
+		return input.substring(start,end);
 	}
 	
 	private void exception(String[] num) throws Exception {

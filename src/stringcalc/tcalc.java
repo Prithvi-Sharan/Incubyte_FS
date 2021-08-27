@@ -45,7 +45,11 @@ public class tcalc {
 		assertEquals(calc.Add("2,1001"),2);
 	}
 	
-	public void varlen() throws Exception {
+	public void varsep() throws Exception {
 		assertEquals(calc.Add("//[---]\n1---2---3"),6);
+	}
+	
+	public void nsep() throws Exception {
+		assertEquals(calc.Add("//[-][%]\n1-2%3"),6);
 	}
 }
