@@ -9,10 +9,18 @@ public class Calculator {
 			return 0;
 		}
 		else if(input.length() == 1) {
-			return Integer.parseInt(input);
+			return sti(input);
 		}
 		else {
-			return Integer.parseInt(num[0])+Integer.parseInt(num[1]);
+			return sum(num[0],num[1]);
 		}
+	}
+	
+	private int sti(String a) {
+		return Integer.parseInt(a);
+	}
+	
+	private int sum(String a, String b) {
+		return Integer.parseInt(a)+Integer.parseInt(b);
 	}
 }
