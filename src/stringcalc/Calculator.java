@@ -3,10 +3,13 @@ package stringcalc;
 public class Calculator {
 
 	public int Add(String input) {
-		// TODO Auto-generated method stub
+		String[] num=input.split(",");
+		
 		if(input.isEmpty()) {
 			return 0;
 		}
-		return Integer.parseInt(input);
+		else {
+			return Integer.parseInt(num[0])+Integer.parseInt(num[1]);
+		}
 	}
 }

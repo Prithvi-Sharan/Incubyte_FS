@@ -21,6 +21,6 @@ public class tcalc {
 	}
 	
 	public void twonum() {
-		assertEquals(calc.Add("1,2"),3)
+		assertEquals(calc.Add("1,2"),3);
 	}
 }
