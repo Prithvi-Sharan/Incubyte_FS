@@ -20,4 +20,7 @@ public class tcalc {
 		assertEquals(calc.Add("1"),1);
 	}
 	
+	public void twonum() {
+		assertEquals(calc.Add("1,2"),3)
+	}
 }

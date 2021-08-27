@@ -5,7 +5,7 @@
     <classes>
       <class name="stringcalc.tcalc">
         <methods>
-          <include name="singleval"/>
+          <include name="twonum"/>
           <include name="init"/>
         </methods>
       </class> <!-- stringcalc.tcalc -->
