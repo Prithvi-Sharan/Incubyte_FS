@@ -42,6 +42,6 @@ public class tcalc {
 	}
 	
 	public void ng1000() throws Exception {
-		assertEquals(calc.Add("1,2,1000"),20);
+		assertEquals(calc.Add("2,1001"),2);
 	}
 }

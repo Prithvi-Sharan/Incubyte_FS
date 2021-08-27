@@ -29,6 +29,9 @@ public class Calculator {
 		
 		int sum=0;
 		for (String n:num) {
+			if(sti(n)>1000) {
+				continue;
+			}
 			sum+=sti(n);
 		}
 		return sum;
