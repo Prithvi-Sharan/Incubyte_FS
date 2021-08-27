@@ -20,11 +20,11 @@ public class tcalc {
 		assertEquals(calc.Add("1"),1);
 	}
 	
-	public void twonum() throws Exception {
+	public void numtwo() throws Exception {
 		assertEquals(calc.Add("1,2"),3);
 	}
 	
-	public void unnum() throws Exception {
+	public void numun() throws Exception {
 		assertEquals(calc.Add("1,2,3,4"),10);
 	}
 	
@@ -45,11 +45,11 @@ public class tcalc {
 		assertEquals(calc.Add("2,1001"),2);
 	}
 	
-	public void varsep() throws Exception {
+	public void seplen() throws Exception {
 		assertEquals(calc.Add("//[---]\n1---2---3"),6);
 	}
 	
-	public void nsep() throws Exception {
+	public void sepmul() throws Exception {
 		assertEquals(calc.Add("//[-][%]\n1-2%3"),6);
 	}
 }

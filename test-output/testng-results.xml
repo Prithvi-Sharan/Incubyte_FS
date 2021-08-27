@@ -1,34 +1,34 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="10" passed="9" failed="1" skipped="0">
+<testng-results ignored="0" total="10" passed="10" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2021-08-27T16:04:03 IST" name="Default suite" finished-at="2021-08-27T16:04:03 IST" duration-ms="82">
+  <suite started-at="2021-08-27T17:14:15 IST" name="Default suite" finished-at="2021-08-27T17:14:15 IST" duration-ms="78">
     <groups>
     </groups>
-    <test started-at="2021-08-27T16:04:03 IST" name="Default test" finished-at="2021-08-27T16:04:03 IST" duration-ms="82">
+    <test started-at="2021-08-27T17:14:15 IST" name="Default test" finished-at="2021-08-27T17:14:15 IST" duration-ms="78">
       <class name="stringcalc.tcalc">
-        <test-method is-config="true" signature="init()[pri:0, instance:stringcalc.tcalc@47d90b9e]" started-at="2021-08-27T16:04:03 IST" name="init" finished-at="2021-08-27T16:04:03 IST" duration-ms="7" status="PASS">
+        <test-method is-config="true" signature="init()[pri:0, instance:stringcalc.tcalc@47d90b9e]" started-at="2021-08-27T17:14:15 IST" name="init" finished-at="2021-08-27T17:14:15 IST" duration-ms="7" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- init -->
-        <test-method signature="allowline()[pri:0, instance:stringcalc.tcalc@47d90b9e]" started-at="2021-08-27T16:04:03 IST" name="allowline" finished-at="2021-08-27T16:04:03 IST" duration-ms="9" status="PASS">
+        <test-method signature="allowline()[pri:0, instance:stringcalc.tcalc@47d90b9e]" started-at="2021-08-27T17:14:15 IST" name="allowline" finished-at="2021-08-27T17:14:15 IST" duration-ms="8" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- allowline -->
-        <test-method signature="empty()[pri:0, instance:stringcalc.tcalc@47d90b9e]" started-at="2021-08-27T16:04:03 IST" name="empty" finished-at="2021-08-27T16:04:03 IST" duration-ms="2" status="PASS">
+        <test-method signature="empty()[pri:0, instance:stringcalc.tcalc@47d90b9e]" started-at="2021-08-27T17:14:15 IST" name="empty" finished-at="2021-08-27T17:14:15 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- empty -->
-        <test-method signature="negativeexception()[pri:0, instance:stringcalc.tcalc@47d90b9e]" started-at="2021-08-27T16:04:03 IST" name="negativeexception" finished-at="2021-08-27T16:04:03 IST" duration-ms="2" status="PASS">
+        <test-method signature="negativeexception()[pri:0, instance:stringcalc.tcalc@47d90b9e]" started-at="2021-08-27T17:14:15 IST" name="negativeexception" finished-at="2021-08-27T17:14:15 IST" duration-ms="1" status="PASS">
           <exception class="java.lang.Exception">
             <message>
               <![CDATA[Negative input:-1]]>
             </message>
             <full-stacktrace>
               <![CDATA[java.lang.Exception: Negative input:-1
-at stringcalc.Calculator.exception(Calculator.java:62)
-at stringcalc.Calculator.sum(Calculator.java:28)
-at stringcalc.Calculator.Add(Calculator.java:19)
+at stringcalc.Calculator.exception(Calculator.java:65)
+at stringcalc.Calculator.sum(Calculator.java:29)
+at stringcalc.Calculator.Add(Calculator.java:20)
 at stringcalc.tcalc.negativeexception(tcalc.java:41)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
@@ -64,77 +64,34 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- negativeexception -->
-        <test-method signature="ng1000()[pri:0, instance:stringcalc.tcalc@47d90b9e]" started-at="2021-08-27T16:04:03 IST" name="ng1000" finished-at="2021-08-27T16:04:03 IST" duration-ms="2" status="PASS">
+        <test-method signature="ng1000()[pri:0, instance:stringcalc.tcalc@47d90b9e]" started-at="2021-08-27T17:14:15 IST" name="ng1000" finished-at="2021-08-27T17:14:15 IST" duration-ms="2" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ng1000 -->
-        <test-method signature="nsep()[pri:0, instance:stringcalc.tcalc@47d90b9e]" started-at="2021-08-27T16:04:03 IST" name="nsep" finished-at="2021-08-27T16:04:03 IST" duration-ms="2" status="FAIL">
-          <exception class="java.lang.StringIndexOutOfBoundsException">
-            <message>
-              <![CDATA[begin 2, end 0, length 10]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.StringIndexOutOfBoundsException: begin 2, end 0, length 10
-at java.base/java.lang.String.checkBoundsBeginEnd(String.java:3751)
-at java.base/java.lang.String.substring(String.java:1907)
-at stringcalc.Calculator.getsubs(Calculator.java:56)
-at stringcalc.Calculator.getsep(Calculator.java:45)
-at stringcalc.Calculator.Add(Calculator.java:8)
-at stringcalc.tcalc.nsep(tcalc.java:53)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:567)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:794)
-at org.testng.TestRunner.run(TestRunner.java:596)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-at org.testng.TestNG.runSuites(TestNG.java:1063)
-at org.testng.TestNG.run(TestNG.java:1031)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.StringIndexOutOfBoundsException -->
+        <test-method signature="numtwo()[pri:0, instance:stringcalc.tcalc@47d90b9e]" started-at="2021-08-27T17:14:15 IST" name="numtwo" finished-at="2021-08-27T17:14:15 IST" duration-ms="2" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- nsep -->
-        <test-method signature="singleval()[pri:0, instance:stringcalc.tcalc@47d90b9e]" started-at="2021-08-27T16:04:03 IST" name="singleval" finished-at="2021-08-27T16:04:03 IST" duration-ms="2" status="PASS">
+        </test-method> <!-- numtwo -->
+        <test-method signature="numun()[pri:0, instance:stringcalc.tcalc@47d90b9e]" started-at="2021-08-27T17:14:15 IST" name="numun" finished-at="2021-08-27T17:14:15 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- numun -->
+        <test-method signature="seplen()[pri:0, instance:stringcalc.tcalc@47d90b9e]" started-at="2021-08-27T17:14:15 IST" name="seplen" finished-at="2021-08-27T17:14:15 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- seplen -->
+        <test-method signature="sepmul()[pri:0, instance:stringcalc.tcalc@47d90b9e]" started-at="2021-08-27T17:14:15 IST" name="sepmul" finished-at="2021-08-27T17:14:15 IST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- sepmul -->
+        <test-method signature="singleval()[pri:0, instance:stringcalc.tcalc@47d90b9e]" started-at="2021-08-27T17:14:15 IST" name="singleval" finished-at="2021-08-27T17:14:15 IST" duration-ms="2" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- singleval -->
-        <test-method signature="twonum()[pri:0, instance:stringcalc.tcalc@47d90b9e]" started-at="2021-08-27T16:04:03 IST" name="twonum" finished-at="2021-08-27T16:04:03 IST" duration-ms="2" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- twonum -->
-        <test-method signature="unnum()[pri:0, instance:stringcalc.tcalc@47d90b9e]" started-at="2021-08-27T16:04:03 IST" name="unnum" finished-at="2021-08-27T16:04:03 IST" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- unnum -->
-        <test-method signature="variablesep()[pri:0, instance:stringcalc.tcalc@47d90b9e]" started-at="2021-08-27T16:04:03 IST" name="variablesep" finished-at="2021-08-27T16:04:03 IST" duration-ms="1" status="PASS">
+        <test-method signature="variablesep()[pri:0, instance:stringcalc.tcalc@47d90b9e]" started-at="2021-08-27T17:14:15 IST" name="variablesep" finished-at="2021-08-27T17:14:15 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- variablesep -->
-        <test-method signature="varsep()[pri:0, instance:stringcalc.tcalc@47d90b9e]" started-at="2021-08-27T16:04:03 IST" name="varsep" finished-at="2021-08-27T16:04:03 IST" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- varsep -->
       </class> <!-- stringcalc.tcalc -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->

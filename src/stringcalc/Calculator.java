@@ -8,6 +8,7 @@ public class Calculator {
 			sep=getsep(input);
 			input=input.split("\n")[1];
 		}
+		System.out.print(sep);
 		String[] num=input.split(sep);
 		if(input.isEmpty()) {
 			return 0;
@@ -41,8 +42,10 @@ public class Calculator {
 		if(input.charAt(2)=='[') {
 			String i=input;
 			String a="";
+			a+=getsubs(i);
+			i=i.substring(i.indexOf(']')+1);
 			while(i.indexOf('[')!=-1) {
-				a+=getsubs(i);
+				a=a+'|'+getsubs(i);
 				i=i.substring(i.indexOf(']'));
 			}
 			return a;

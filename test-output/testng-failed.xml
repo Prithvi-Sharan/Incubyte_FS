@@ -5,8 +5,9 @@
     <classes>
       <class name="stringcalc.tcalc">
         <methods>
+          <include name="twonum"/>
+          <include name="unnum"/>
           <include name="init"/>
-          <include name="nsep"/>
         </methods>
       </class> <!-- stringcalc.tcalc -->
     </classes>

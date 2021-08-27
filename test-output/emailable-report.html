@@ -9,52 +9,16 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="8">Default suite</th></tr>
-<tr><td><a href="#t0">Default test</a></td><td class="num">9</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">82</td><td></td><td></td></tr>
+<tr><td><a href="#t0">Default test</a></td><td class="num">10</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">78</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Default suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Default test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">stringcalc.tcalc</td><td><a href="#m0">nsep</a></td><td rowspan="1">1630060443121</td><td rowspan="1">2</td></tr><tr><th colspan="4">Default test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="9">stringcalc.tcalc</td><td><a href="#m1">allowline</a></td><td rowspan="1">1630060443096</td><td rowspan="1">9</td></tr><tr class="passedeven"><td><a href="#m2">empty</a></td><td rowspan="1">1630060443108</td><td rowspan="1">2</td></tr><tr class="passedeven"><td><a href="#m3">negativeexception</a></td><td rowspan="1">1630060443113</td><td rowspan="1">2</td></tr><tr class="passedeven"><td><a href="#m4">ng1000</a></td><td rowspan="1">1630060443118</td><td rowspan="1">2</td></tr><tr class="passedeven"><td><a href="#m5">singleval</a></td><td rowspan="1">1630060443127</td><td rowspan="1">2</td></tr><tr class="passedeven"><td><a href="#m6">twonum</a></td><td rowspan="1">1630060443130</td><td rowspan="1">2</td></tr><tr class="passedeven"><td><a href="#m7">unnum</a></td><td rowspan="1">1630060443133</td><td rowspan="1">1</td></tr><tr class="passedeven"><td><a href="#m8">variablesep</a></td><td rowspan="1">1630060443135</td><td rowspan="1">1</td></tr><tr class="passedeven"><td><a href="#m9">varsep</a></td><td rowspan="1">1630060443137</td><td rowspan="1">1</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Default suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Default test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="10">stringcalc.tcalc</td><td><a href="#m0">allowline</a></td><td rowspan="1">1630064655182</td><td rowspan="1">8</td></tr><tr class="passedeven"><td><a href="#m1">empty</a></td><td rowspan="1">1630064655193</td><td rowspan="1">1</td></tr><tr class="passedeven"><td><a href="#m2">negativeexception</a></td><td rowspan="1">1630064655197</td><td rowspan="1">1</td></tr><tr class="passedeven"><td><a href="#m3">ng1000</a></td><td rowspan="1">1630064655202</td><td rowspan="1">2</td></tr><tr class="passedeven"><td><a href="#m4">numtwo</a></td><td rowspan="1">1630064655205</td><td rowspan="1">2</td></tr><tr class="passedeven"><td><a href="#m5">numun</a></td><td rowspan="1">1630064655208</td><td rowspan="1">1</td></tr><tr class="passedeven"><td><a href="#m6">seplen</a></td><td rowspan="1">1630064655211</td><td rowspan="1">1</td></tr><tr class="passedeven"><td><a href="#m7">sepmul</a></td><td rowspan="1">1630064655214</td><td rowspan="1">2</td></tr><tr class="passedeven"><td><a href="#m8">singleval</a></td><td rowspan="1">1630064655217</td><td rowspan="1">2</td></tr><tr class="passedeven"><td><a href="#m9">variablesep</a></td><td rowspan="1">1630064655220</td><td rowspan="1">1</td></tr></tbody>
 </table>
-<h2>Default test</h2><h3 id="m0">stringcalc.tcalc#nsep</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.StringIndexOutOfBoundsException: begin 2, end 0, length 10
-	at java.base/java.lang.String.checkBoundsBeginEnd(String.java:3751)
-	at java.base/java.lang.String.substring(String.java:1907)
-	at stringcalc.Calculator.getsubs(Calculator.java:56)
-	at stringcalc.Calculator.getsep(Calculator.java:45)
-	at stringcalc.Calculator.Add(Calculator.java:8)
-	at stringcalc.tcalc.nsep(tcalc.java:53)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
-	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:794)
-	at org.testng.TestRunner.run(TestRunner.java:596)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-	at org.testng.TestNG.runSuites(TestNG.java:1063)
-	at org.testng.TestNG.run(TestNG.java:1031)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m1">stringcalc.tcalc#allowline</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m2">stringcalc.tcalc#empty</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m3">stringcalc.tcalc#negativeexception</h3><table class="result"><tr><th>Expected Exception</th></tr><tr><td><div class="stacktrace">java.lang.Exception: Negative input:-1
-	at stringcalc.Calculator.exception(Calculator.java:62)
-	at stringcalc.Calculator.sum(Calculator.java:28)
-	at stringcalc.Calculator.Add(Calculator.java:19)
+<h2>Default test</h2><h3 id="m0">stringcalc.tcalc#allowline</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">stringcalc.tcalc#empty</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">stringcalc.tcalc#negativeexception</h3><table class="result"><tr><th>Expected Exception</th></tr><tr><td><div class="stacktrace">java.lang.Exception: Negative input:-1
+	at stringcalc.Calculator.exception(Calculator.java:65)
+	at stringcalc.Calculator.sum(Calculator.java:29)
+	at stringcalc.Calculator.Add(Calculator.java:20)
 	at stringcalc.tcalc.negativeexception(tcalc.java:41)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
@@ -85,11 +49,12 @@
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m4">stringcalc.tcalc#ng1000</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m5">stringcalc.tcalc#singleval</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m6">stringcalc.tcalc#twonum</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m7">stringcalc.tcalc#unnum</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m8">stringcalc.tcalc#variablesep</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m9">stringcalc.tcalc#varsep</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">stringcalc.tcalc#ng1000</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">stringcalc.tcalc#numtwo</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m5">stringcalc.tcalc#numun</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m6">stringcalc.tcalc#seplen</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m7">stringcalc.tcalc#sepmul</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m8">stringcalc.tcalc#singleval</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m9">stringcalc.tcalc#variablesep</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>
