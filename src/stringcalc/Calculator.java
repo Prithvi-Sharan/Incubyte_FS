@@ -2,8 +2,9 @@ package stringcalc;
 
 public class Calculator {
 
+	private String sep=",|\n";
 	public int Add(String input) {
-		String[] num=input.split(",|\n");
+		String[] num=input.split(sep);
 		
 		
 		if(input.isEmpty()) {
