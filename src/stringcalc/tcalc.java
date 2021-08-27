@@ -27,4 +27,8 @@ public class tcalc {
 	public void unnum() {
 		assertEquals(calc.Add("1,2,3,4"),10);
 	}
+	
+	public void allowline() {
+		assertEquals(calc.Add("1\n2,3"),6);
+	}
 }
