@@ -25,11 +25,7 @@ public class Calculator {
 	}
 	
 	private int sum(String[] num) throws Exception {
-		for (String n:num) {
-			if(sti(n)<0) {
-				throw new Exception("Negative input:"+n);
-			}
-		}
+		exception(num);
 		
 		int sum=0;
 		for (String n:num) {
@@ -42,4 +38,11 @@ public class Calculator {
 		return Character.toString(input.charAt(2));
 	}
 	
+	private void exception(String[] num) throws Exception {
+		for (String n:num) {
+			if(sti(n)<0) {
+				throw new Exception("Negative input:"+n);
+			}
+		}
+	}
 }
