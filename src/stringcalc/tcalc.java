@@ -36,4 +36,8 @@ public class tcalc {
 		assertEquals(calc.Add("//;\n1;2"),3);
 	}
 	
+	@Test(expectedExceptions=Exception.class)
+	public void negativeexception() {
+		calc.Add("-1");
+	}
 }
